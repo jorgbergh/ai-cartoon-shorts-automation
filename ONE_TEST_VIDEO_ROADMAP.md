@@ -245,26 +245,153 @@ Pass/fail standard:
 
 ### Step 5: Animate each still image
 
-Use image-to-video. Upload one still image at a time and paste the matching motion prompt.
+This is where your still pictures become moving video clips.
 
-Example:
+You will do the same basic process 7 times:
 
 ```text
-Scene 1 image + "slow push-in on the axolotl's face; gills wave gently; it blinks once"
+Open Runway
+Choose image-to-video
+Upload one scene image
+Paste the matching motion prompt
+Generate a short clip
+Download the clip
+Rename it correctly
+Repeat for the next scene
 ```
 
-Keep motion simple. A clean little movement is better than a broken ambitious movement.
+Important idea: do not ask Runway to create a totally new video from text. You already made the
+picture. Now Runway's job is only to add movement to that picture.
 
-Pass/fail standard:
+#### Before you start
 
-- Pass: the clip has gentle motion.
-- Pass: character/animal stays recognizable.
-- Pass: no weird extra limbs or face warping.
-- Fail: wild camera movement.
-- Fail: animal body melts or changes.
-- Fail: clip feels unrelated to the still image.
+Make sure these files exist:
 
-Save clips like this:
+```text
+test-video-01-axolotl/images/scene_01_hook.png
+test-video-01-axolotl/images/scene_02_finn_intro.png
+test-video-01-axolotl/images/scene_03_gills.png
+test-video-01-axolotl/images/scene_04_never_grows_up.png
+test-video-01-axolotl/images/scene_05_regrowth.png
+test-video-01-axolotl/images/scene_06_one_lake.png
+test-video-01-axolotl/images/scene_07_loop_smile.png
+```
+
+Also create this folder if it does not exist yet:
+
+```text
+test-video-01-axolotl/video/
+```
+
+#### Runway setup for each clip
+
+In Runway:
+
+1. Open your project.
+2. Choose the video generation tool.
+3. Choose **image-to-video** or the option that lets you start from an uploaded image.
+4. Upload the correct scene image.
+5. Set the format to vertical `9:16` if Runway asks.
+6. Set the clip length to around `5 seconds` if you get a choice.
+7. Paste the motion prompt for that scene.
+8. Generate the clip.
+9. Watch the clip once before downloading.
+10. Download it only if it passes the checks below.
+
+If Runway offers different model or quality settings, choose the normal/high-quality creative
+video option. Do not choose the fastest/cheapest mode if it visibly damages the character or
+animal.
+
+#### Motion prompts to paste
+
+Use these exact prompts, one at a time.
+
+Scene 1:
+
+```text
+slow push-in on the axolotl's face; gills wave gently; it blinks once
+```
+
+Scene 2:
+
+```text
+Finn leans in and points at the water with an excited grin; leaves rustle behind him
+```
+
+Scene 3:
+
+```text
+gentle side-orbit around the axolotl; the feathery gills sway in the current
+```
+
+Scene 4:
+
+```text
+the little axolotl wiggles and swims happily across the frame
+```
+
+Scene 5:
+
+```text
+the glowing leg sparkles and a new little leg smoothly forms; the glow softly pulses
+```
+
+Scene 6:
+
+```text
+slow zoom-out / pull-back revealing the lone axolotl in the big quiet lake
+```
+
+Scene 7:
+
+```text
+the axolotl's smile slowly widens and it blinks; gills wave; match the opening shot
+```
+
+#### What a good clip looks like
+
+Good motion is usually subtle. For this first test, a small camera push, blink, gill movement,
+water movement, or gentle character gesture is enough.
+
+Do not chase dramatic movement yet. Big movement is where AI video often breaks the character.
+
+Keep the clip if:
+
+- The axolotl or Finn still looks like the original image.
+- The motion is easy to understand.
+- The camera movement is smooth.
+- The face does not warp.
+- The body does not grow extra parts.
+- The clip still looks like a cartoon, not a realistic animal/human.
+- The clip has no text, watermark, or random logo.
+
+Regenerate the clip if:
+
+- Finn's face changes badly.
+- The axolotl melts, grows extra legs, or loses its gills.
+- The camera spins or moves too fast.
+- The clip adds random text.
+- The image becomes blurry.
+- The animation distracts from the fact being explained.
+
+#### How many times should you regenerate?
+
+For the first test, use this rule:
+
+```text
+Try each scene up to 3 times.
+If one version is usable, keep it and move on.
+Only spend more attempts on Scene 1, Scene 2, or Scene 7.
+```
+
+Why: Scene 1 stops the scroll, Scene 2 introduces Finn, and Scene 7 creates the loop. Those are
+worth extra effort. The middle fact scenes only need to be clear and consistent.
+
+#### Download and rename each clip
+
+When a clip is good enough, download it and rename it immediately.
+
+Use these exact filenames:
 
 ```text
 test-video-01-axolotl/video/scene_01_hook.mp4
@@ -275,6 +402,36 @@ test-video-01-axolotl/video/scene_05_regrowth.mp4
 test-video-01-axolotl/video/scene_06_one_lake.mp4
 test-video-01-axolotl/video/scene_07_loop_smile.mp4
 ```
+
+Do not leave files with names like `runwayml_video_23748.mp4`. You will get confused in CapCut.
+
+#### Simple scene-by-scene notes
+
+Scene 1 is the hook. The axolotl face should be clear immediately. Avoid a slow reveal.
+
+Scene 2 is the only Finn scene. It matters that Finn looks correct. If the hand or pointing
+gesture is imperfect but his face and outfit are good, keep it.
+
+Scene 3 is about the gills. The gills should move gently and stay visible.
+
+Scene 4 is about staying baby-like. Cute swimming motion is enough.
+
+Scene 5 is about regrowth. It must be magical and clean, not gross. If it looks gory, reject it.
+
+Scene 6 is about rarity. Slow zoom-out is better than lots of movement.
+
+Scene 7 should look close to Scene 1. This helps the video loop when it restarts.
+
+Pass/fail standard:
+
+- Pass: the clip has gentle motion.
+- Pass: character/animal stays recognizable.
+- Pass: no weird extra limbs or face warping.
+- Pass: no random text or watermark.
+- Fail: wild camera movement.
+- Fail: animal body melts or changes.
+- Fail: clip feels unrelated to the still image.
+- Fail: clip is too blurry to use on a phone.
 
 ### Step 6: Assemble in CapCut
 
