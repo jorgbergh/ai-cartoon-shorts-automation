@@ -315,7 +315,7 @@ slow push-in on the axolotl's face; gills wave gently; it blinks once
 Scene 2:
 
 ```text
-Finn leans in and points at the water with an excited grin; leaves rustle behind him
+Keep Finn as the clear main subject in the center-left foreground. Medium shot focused on Finn's face and upper body; Finn leans slightly toward the camera, smiles, and points down toward the water. Very subtle camera push-in on Finn. Background leaves rustle gently, but do not shift focus away from Finn.
 ```
 
 Scene 3:

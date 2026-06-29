@@ -162,7 +162,7 @@ Finn crouching at the edge of a bright cartoon pond, grinning and pointing down 
 water with one hand, lush green plants framing the sides, sunny daytime. Finn positioned on the
 left so the water shows on the right. [Series style block]
 ```
-- **② MOTION (Runway image-to-video):** `Finn leans in and points at the water with an excited grin; leaves rustle behind him`
+- **② MOTION (Runway image-to-video):** `Keep Finn as the clear main subject in the center-left foreground. Medium shot focused on Finn's face and upper body; Finn leans slightly toward the camera, smiles, and points down toward the water. Very subtle camera push-in on Finn. Background leaves rustle gently, but do not shift focus away from Finn.`
 - **SFX:** leaf rustle + a friendly "pop"
 
 ---
